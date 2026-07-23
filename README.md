@@ -1,132 +1,123 @@
-# 📊 Care Transition Efficiency & Placement Outcome Analytics
+<div align="center">
 
-An interactive healthcare analytics dashboard developed using **Streamlit**, **Plotly**, and **Python** to analyze the operational efficiency of the Unaccompanied Children Program.
+# 📊 Care Transition Efficiency & Placement Analytics
 
-The project provides executive-level insights through KPI monitoring, monthly trend analysis, interactive visualizations, and business intelligence dashboards.
+**An interactive, executive-grade healthcare analytics dashboard designed to monitor and optimize care transitions.**
 
-> Developed as part of an **AI/ML Internship (2026)**.
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
+[![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+
+</div>
+
+---
 
 ## 📷 Dashboard Preview
 
-> Dashboard screenshots will be added here.
+> 📌 *Add high-resolution screenshots or a short GIF of your running Streamlit app here!*
+
+| Executive Overview | Interactive Trends |
+| :---: | :---: |
+| `![KPI Preview](images/kpi_preview.png)` | `![Chart Preview](images/chart_preview.png)` |
+
+---
 
 ## 📖 Project Overview
 
-This project analyzes operational data from the **HHS Unaccompanied Children Program** to evaluate care transition efficiency and placement outcomes.
+This project provides end-to-end data processing and visualization for the **HHS Unaccompanied Children Program**. It converts complex operational records into interactive business intelligence dashboards, allowing decision-makers to track operational performance, monitor transfer bottleneck trends, and analyze placement outcomes.
 
-The dashboard transforms raw operational records into meaningful business insights by calculating KPIs, visualizing monthly trends, and highlighting operational performance.
+Developed as a core **Data Analytics & AI/ML Project (2026)**.
 
-The objective is to support better decision-making through interactive analytics.
+---
 
-## 🎯 Objectives
+## 🎯 Objectives & Value Delivered
 
-- Analyze child care transition efficiency.
-- Measure operational performance using KPIs.
-- Identify monthly trends and bottlenecks.
-- Compare apprehension and discharge activities.
-- Build an interactive executive dashboard.
-- Present actionable business insights.
+* **⚡ Optimize Handoff Efficiency:** Monitor transfer velocity between CBP custody and HHS care facilities.
+* **📈 Trend Identification:** Track monthly apprehension spikes and discharge capacity across 2023–2025.
+* **🚨 Bottleneck Reduction:** Quantify backlog accumulation to ensure steady discharge velocity.
+* **🖥️ Executive Visibility:** Deliver a clean, responsive Streamlit dashboard built for quick decision-making.
 
-## 📂 Dataset
+---
 
-The dataset contains operational records of the **HHS Unaccompanied Children Program**, including:
+## 📊 Key Performance Indicators (KPIs)
 
-- Date
-- Children Apprehended
-- Children in CBP Custody
-- Children Transferred
-- Children in HHS Care
-- Children Discharged
+The dashboard computes and monitors **5 critical operational metrics**:
 
-After preprocessing:
+| Metric | Formula / Logic | Description |
+| :--- | :--- | :--- |
+| **Transfer Efficiency** | $\frac{\text{Transferred out of CBP}}{\text{Children in CBP Custody}}$ | Measures speed and stability of facility transfers |
+| **Discharge Effectiveness** | $\frac{\text{Discharged from HHS}}{\text{Children in HHS Care}}$ | Evaluates HHS placement speed |
+| **Pipeline Throughput** | $\frac{\text{Discharged from HHS}}{\text{Apprehended \& Placed in CBP}}$ | Identifies total operational discharge capacity |
+| **Outcome Stability** | $\text{Std. Dev of Discharges}$ | Measures consistency of monthly placements |
+| **Average Backlog** | $\text{Apprehended} - \text{Discharged}$ | Tracks net flow accumulation across facilities |
 
-- Total Records: **720**
-- Analysis Period: **2023 – 2025**
+---
 
-## 📈 Key Performance Indicators
+## 🚀 Key Features
 
-The dashboard evaluates five major KPIs:
+- 💎 **Modern Executive UI:** High-contrast CSS KPI cards and aligned multi-column visual hierarchy.
+- 📉 **Gradient Area Charts:** Interactive Plotly visual plots with customized tooltips and non-cluttered controls.
+- 🎛️ **Dynamic Time Filters:** Interactive sidebar controls to slice and filter data across custom date ranges.
+- 💡 **Automated Business Insights:** Highlighting operational wins and volume drops in clean callout panels.
+- 📁 **Cleaned Dataset View:** Formatted dates (`YYYY-MM-DD`) and clean percentages in raw data view.
 
-- Transfer Efficiency
-- Discharge Effectiveness
-- Pipeline Throughput
-- Outcome Stability
-- Average Backlog Accumulation
+---
 
-## 🚀 Dashboard Features
+## 💡 Key Business Insights
 
-✔ Interactive KPI Cards
+> ⚡ **Transfer Efficiency:** Averaged **69.10%**, demonstrating steady operational handoff across facilities.
 
-✔ Monthly Trend Analysis
+> 📈 **2024 Peak & Subsequent Decline:** Monthly apprehensions peaked in **early 2024** before experiencing a sharp downward trend entering 2025.
 
-✔ Apprehended vs Discharged Comparison
+> 🔄 **High Pipeline Throughput:** Throughput exceeded **100%**, reflecting significant discharges from backlog admitted prior to the observation window.
 
-✔ Business Insights Section
+> 📉 **Negative Backlog Accumulation:** Average backlog remained negative, confirming that discharge velocity effectively outpaced incoming apprehensions.
 
-✔ Executive Dashboard Layout
+---
 
-✔ Dataset Preview
+## 🛠️ Tech Stack & Tools
 
-✔ Responsive Sidebar
+* **Core Language:** Python 3.9+
+* **Web Framework:** Streamlit
+* **Visualization:** Plotly Express / Graph Objects
+* **Data Manipulation:** Pandas, NumPy
+* **Styling:** Custom CSS (Flexbox, CSS Cards)
 
-✔ Interactive Plotly Visualizations
+---
 
-## 🛠️ Tech Stack
-
-- Python
-- Streamlit
-- Plotly
-- Pandas
-- NumPy
-
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```text
 care_transition_analytics/
 │
-├── app.py
-├── requirements.txt
-├── README.md
+├── app.py                     # Main Streamlit application
+├── requirements.txt           # Python project dependencies
+├── README.md                  # Comprehensive project documentation
 │
 ├── data/
-│   └── healthcare.csv
+│   └── healthcare.csv         # Processed operational dataset (720 records)
 │
 ├── notebook/
-│   └── Healthcare_Analysis.ipynb
+│   └── Healthcare_Analysis.ipynb  # Exploratory Data Analysis (EDA) notebook
 │
-└── images/
-
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/Saif-codes-cell/care-transition-analytics.git
-
+└── images/                    # Screenshot assets for documentation
 
 ---
-
-### Step 12 — Business Insights
-
-```markdown
-## 💡 Key Insights
-
-- Transfer Efficiency averaged **69.10%**, indicating a stable transfer process.
-- Monthly apprehensions peaked during early **2024** before declining significantly in **2025**.
-- Discharge activity followed a similar downward trend.
-- Pipeline Throughput exceeded **100%**, reflecting discharges from previously admitted children.
-- Average backlog remained negative, indicating discharge activity frequently exceeded new apprehensions.
-
-## 🔮 Future Enhancements
-
-- Add real-time data integration
-- Implement predictive analytics using Machine Learning
-- Introduce advanced filtering options
-- Export dashboard reports to PDF
-- Deploy with live cloud-based datasets
-
+```
 ## 👨‍💻 Author
 
-**Saif Chogle**
+<div align="center">
 
-Developed as part of an **AI/ML Internship (2026)**.
+### **Saif Chogle**
+*Computer Science Student • Data Analytics & AI/ML Developer*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin-username)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Saif-codes-cell)
+[![Portfolio/Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+
+<br>
+
+*Developed as part of an **AI/ML Internship Project (2026)**.*
+
+</div>
