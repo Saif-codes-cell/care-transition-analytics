@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 Care Transition Efficiency & Placement Analytics
+# 📊 Care Transition Efficiency & Placement Outcome Analytics
 
 **An interactive, executive-grade healthcare analytics dashboard designed to monitor and optimize care transitions.**
 
@@ -15,11 +15,9 @@
 
 ## 📷 Dashboard Preview
 
-> 📌 *Add high-resolution screenshots or a short GIF of your running Streamlit app here!*
-
 | Executive Overview | Interactive Trends |
 | :---: | :---: |
-| `![KPI Preview](images/kpi_preview.png)` | `![Chart Preview](images/chart_preview.png)` |
+| ![Executive Overview](images/kpi_preview.png) | ![Interactive Trends](images/chart_preview.png) |
 
 ---
 
@@ -110,9 +108,9 @@ care_transition_analytics/
 <div align="center">
 
 ### **Saif Chogle**
-*Computer Science Student • Data Analytics & AI/ML Developer*
+*Data Analytics & AI/ML Developer*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin-username)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin..com/in/saif-chogle)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Saif-codes-cell)
 [![Portfolio/Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
 
