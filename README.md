@@ -20,6 +20,14 @@
 | ![Executive Overview](images/kpi_preview.png) | ![Interactive Trends](images/chart_preview.png) |
 
 ---
+---
+
+## 🌐 Live Demo
+
+🚀 **Experience the interactive dashboard here:**
+
+👉 **[Launch Care Transition Analytics Dashboard](https://care-transition-analytics-lfqqse9lnazvdlw3mb4yhn.streamlit.app/)**
+
 
 ## 📖 Project Overview
 
